@@ -1,0 +1,138 @@
+@import url('./reset.css');
+@import url('./base.css');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2e2f42;
+  background-color: #ffffff;
+}
+
+/* Search form */
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 36px auto 32px;
+}
+
+.form input {
+  box-sizing: border-box;
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form input::placeholder {
+  color: #808080;
+}
+.form input:hover {
+  border-color: #000000;
+}
+
+.form input:focus {
+  border-color: #4e75ff;
+}
+
+.form button {
+  height: 40px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: #6c8cff;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
+  gap: 24px;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery .item {
+  width: 360px;
+  border: 1px solid #e7e9fc;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.gallery .item a {
+  display: block;
+}
+
+.gallery .item img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+}
+
+.gallery .info p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* Loader */
+
+.loader {
+  margin: 24px auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.loader.is-hidden {
+  display: none;
+}
+.gallery .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 4px;
+  gap: 4px;
+}
+
+.gallery .info p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.gallery .info p span:first-child {
+  font-weight: 600;
+}
