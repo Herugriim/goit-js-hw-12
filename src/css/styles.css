@@ -136,3 +136,7 @@ body {
 .gallery .info p span:first-child {
   font-weight: 600;
 }
+
+.btn-load-more.is-hidden {
+  display: none;
+}
